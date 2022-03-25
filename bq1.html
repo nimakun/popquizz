@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>question one</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<div id="title">
+	<a href="index.html">Quizz Time!</a>
+	</div>
+	<div>
+<nav><p>in python, variables have start with a letter
+there is mainly 3 types of variables:<br>
+-numbers which are devided to few categories among which (int:signed integers)
+and (flaot: real values)<br>
+-string: text that is contiened in "" or in ''<br>
+-boolean: a true/false statement<br>
+
+
+1/ which of the following is an int: </p>
+	</div>
+	<div id="content">
+		<ul> <li><button onclick="doit()" id="b1">A=5</button></li>
+			<script type="text/javascript">
+				var count =0;
+				function doit() {
+					if (count===0 ){count=count+1
+						}
+					else{ count=count-1}
+					
+				}
+			</script>
+			
+	<li><button onclick="doit1()" id="b2">b="5"</button></li>
+			<script type="text/javascript">
+				var count1 =0;
+				function doit1() {
+					if (count1===0 ){count1=count1+1
+						}
+					else{ count1=count1-1}
+					
+				}
+			</script>
+	<li><button onclick="doit2()" id="b3">C=-5</button></li>
+			<script type="text/javascript">
+				var count2 =0;
+				function doit2() {
+					if (count2===0 ){count2=count2+1
+						}
+					else{ count2=count2-1}
+					
+				}
+			</script>
+		<li><button id="sub" onclick="result()">Submit answer</button></li>
+		<p id="p"></p>
+		<script type="text/javascript">
+			var s=0
+			var r=0
+			let p= document.getElementById('p')
+			function result(){
+				if (count===1){
+					r=r+1
+				}
+				if (count1===0){
+					r=r+1
+				}
+				if (count2===1) {
+					r=r+1
+				}
+			s=s+1
+			if (s>1){
+				p.textContent= "you can submit only one answer"
+			}
+			else{p.textContent= "you result is "+r+"/3"
+			}}
+
+		</script>
+		</ul>
+		<button id="next" onclick="location.href='#'">locked</button>
+	</div>
+
+
+		
+
+</body>
+</html>

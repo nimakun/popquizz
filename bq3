@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>question one</title>
 	<link rel="stylesheet" type="text/css" href="style1.css">
-	<link rel="javascript" type="text/javascript" href="js.js">
 </head>
 <body>
 	<div id="title">
@@ -22,10 +21,11 @@ and (flaot: real values)<br>
 -boolean: a true/false statement<br>
 
 
-1/ which of the following is an int: </p>
+3/ which of following is a valid variable:
+</p>
 	</div>
 	<div id="content">
-		<ul> <li><button onclick="doit()" id="b1">A=5</button></li>
+		<ul> <li><button onclick="doit()" id="b1">*bc</button></li>
 			<script type="text/javascript">
 				var count =0;
 				function doit() {
@@ -36,7 +36,7 @@ and (flaot: real values)<br>
 				}
 			</script>
 			
-	<li><button onclick="doit1()" id="b2">b="5"</button></li>
+	<li><button onclick="doit1()" id="b2">1bc</button></li>
 			<script type="text/javascript">
 				var count1 =0;
 				function doit1() {
@@ -46,7 +46,7 @@ and (flaot: real values)<br>
 					
 				}
 			</script>
-	<li><button onclick="doit2()" id="b3">C=-5</button></li>
+	<li><button onclick="doit2()" id="b3">Ab3</button></li>
 			<script type="text/javascript">
 				var count2 =0;
 				function doit2() {
@@ -63,7 +63,7 @@ and (flaot: real values)<br>
 			var r=0
 			let p= document.getElementById('p')
 			function result(){
-				if (count===1){
+				if (count===0){
 					r=r+1
 				}
 				if (count1===0){
@@ -77,12 +77,11 @@ and (flaot: real values)<br>
 				p.textContent= "you can submit only one answer"
 			}
 			else{p.textContent= "you result is "+r+"/3"
-				M=M+r
 			}}
 
 		</script>
 		</ul>
-		<button id="next" onclick="location.href='bq2.html'">Next</button>
+		<button id="next" onclick="location.href='#'">locked</button>
 	</div>
 
 
